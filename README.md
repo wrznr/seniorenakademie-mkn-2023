@@ -1,2 +1,2 @@
-# OCR für den Arbeitskreis TEI
+# OCR im Kontext MKN für Seniorenakademie
 Folien und Materialien

@@ -389,21 +389,19 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 # Texterkennung: Zeilenorientierte Ansätze
 
-zugrundeliegende Technik
 .cols[
-.fifty[
-+ Training
-    * Zählen von Sequenzen aus Vektor-Buchstabenteil-Paaren
-    * Berechnen von Wahrscheinlichkeiten
+.seventy[
+- zugrundeliegende Technik
+    + Training
+        * Zählen von Sequenzen aus Vektor-Buchstabenteil-Paaren
+        * Berechnen von Wahrscheinlichkeiten
+    + Repräsentation
+        * Tabelle mit fester Anzahl Zeilen und mit variabler Anzahl Spalten (Zeilenlänge)
+        * Pixelspalten mit charakteristischer Abfolge pro Zeichen
+<center>
+<img src="img/hi.png" style="width:150px"/>
+</center>
 ]
-.fifty[
-+ Repräsentation
-    * Tabelle mit fester Anzahl Zeilen und mit variabler Anzahl Spalten (Zeilenlänge)
-    * Pixelspalten mit charakteristischer Abfolge pro Zeichen
-]
-]
-
-.cols[
 .thirty[
 ```
   0123456789
@@ -418,12 +416,6 @@ zugrundeliegende Technik
 8 1100001100 
 9 1100001100 
 ```
-]
-.sixty[
-<center>
-<img src="img/detail_mask.png" style="width:150px"/>
-<img src="img/hi.png" style="width:150px"/>
-</center>
 ]
 ]
 
@@ -470,7 +462,7 @@ zugrundeliegende Technik
 <center>
   <img src="img/larex1.png" width="500px" alt="larex editing"/>
   <p>
-  Annotation mit <a href="https://ocr.slub-dresden.de/Larex/">LAREX</a>
+  Annotation mit <a href="https://ocr-bw.bib.uni-mannheim.de/escriptorium/">eScriptorium</a>
   </p>
 </center>
 
@@ -490,7 +482,7 @@ count: false
 <center>
   <img src="img/larex5.png" width="500px" alt="larex editing"/>
   <p>
-  Annotation mit <a href="https://ocr.slub-dresden.de/Larex/">LAREX</a>
+  Annotation mit <a href="https://ocr-bw.bib.uni-mannheim.de/escriptorium/">eScriptorium</a>
   </p>
 </center>
 
@@ -510,7 +502,7 @@ count: false
 <center>
   <img src="img/larex8.png" width="500px" alt="larex editing"/>
   <p>
-  Annotation mit <a href="https://ocr.slub-dresden.de/Larex/">LAREX</a>
+  Annotation mit <a href="https://ocr-bw.bib.uni-mannheim.de/escriptorium/">eScriptorium</a>
   </p>
 </center>
 
@@ -530,7 +522,7 @@ count: false
 <center>
   <img src="img/larex12.png" width="500px" alt="larex editing"/>
   <p>
-  Annotation mit <a href="https://ocr.slub-dresden.de/Larex/">LAREX</a>
+  Annotation mit <a href="https://ocr-bw.bib.uni-mannheim.de/escriptorium/">eScriptorium</a>
   </p>
 </center>
 

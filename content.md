@@ -390,24 +390,21 @@ den Nacht begegnen könnte, in Gnaden bewahren
 # Texterkennung: Zeilenorientierte Ansätze
 
 .cols[
-.sixty[
+.fifty[
 - zugrundeliegende Technik
     + Training
         * Zählen von Sequenzen aus Vektor-Buchstabenteil-Paaren
         * Berechnen von Wahrscheinlichkeiten
+]
+.fifty[
     + Repräsentation
         * Tabelle mit fester Anzahl Zeilen und mit variabler Anzahl Spalten (Zeilenlänge)
         * Pixelspalten mit charakteristischer Abfolge pro Zeichen
 ]
-.fourty[
-<center>
-<img src="img/detail_mask.png" style="width:150px"/>
-</center>
-]
 ]
 
 .cols[
-.fifty[
+.thirty[
 ```
   0123456789
 0 1100001100
@@ -422,8 +419,9 @@ den Nacht begegnen könnte, in Gnaden bewahren
 9 1100001100 
 ```
 ]
-.fifty[
+.sixty[
 <center>
+<img src="img/detail_mask.png" style="width:150px"/>
 <img src="img/hi.png" style="width:150px"/>
 </center>
 ]

@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>02.02.23</td>
+      <td>09.02.24</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -25,7 +25,7 @@ layout: true
       <td style="text-align:left">Referat 4.3</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>2. Februar 2023</b></td>
+      <td style="font-size:8pt"><b>9. Februar 2024</b></td>
     </tr>
     <tr>
       <td style="font-size:8pt">Seniorenakademie Dresden</td>
@@ -150,52 +150,6 @@ count: false
 .fourty[
 <center>
 <img src="img/transkribus.svg" width="300px" />
-</center>
-]
-]
-
----
-
-count: false
-
-# Einsatzbeispiele
-
-.cols[
-.sixty[
-- typische Anwendungen
-  - Nummernschilderkennung
-  - Captcha-Umgehung
-  - Schlüsselinformationsextraktion
-  - Handschrifterkennung
-  - Volltextdigitalisierung
-]
-.fourty[
-<center>
-<img src="img/beauvais_0.svg" width="300px" />
-<p style="font-size:4pt;">Image by Uwe Springmann, CC BY-SA 4.0</p>
-</center>
-]
-]
-
----
-
-count: false
-
-# Einsatzbeispiele
-
-.cols[
-.sixty[
-- typische Anwendungen
-  - Nummernschilderkennung
-  - Captcha-Umgehung
-  - Schlüsselinformationsextraktion
-  - Handschrifterkennung
-  - Volltextdigitalisierung
-]
-.fourty[
-<center>
-<img src="img/beauvais_1.svg" width="300px" />
-<p style="font-size:4pt;">Image by Uwe Springmann, CC BY-SA 4.0</p>
 </center>
 ]
 ]
@@ -433,45 +387,39 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 ---
 
-# Texterkennung
-
-.cols[
-.fourty[
-- Schritt 3: Zeichenerkennung (Prinzip)
-    + Erkennung auf Zeilenebene
-    + Ausgabe der Zeichen mit höchster Wahrscheinlichkeit
-]
-.sixty[
-<p style="margin-top:-20px">
-<img src="https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png" width="650px" style="transform:rotate(90deg);"/>
-</p>
-]
-]
-
----
-
 # Texterkennung: Zeilenorientierte Ansätze
 
+.cols[
+.sixty[
 - zugrundeliegende Technik
-    + Daten
-        * https://htr-united.github.io/
-        * **manuell transkribierte Textzeilen**
-    + Kodierung `\(f: \mathbb{N}^{10}\rightarrow\mathbb{B}\)` 
-      $$
-      f(x[n]) = \begin{cases} 1 & \text{Pixel in Zelle $(x,n)$ schwarz} \\\\
-      0 & \, \text{sonst}\end{cases}
-      $$ 
     + Training
         * Zählen von Sequenzen aus Vektor-Buchstabenteil-Paaren
-        * Repräsentation als OCR-Modell
-        * Tesseract: [tesstrain](https://github.com/tesseract-ocr/tesstrain)
+        * Berechnen von Wahrscheinlichkeiten
+    + Repräsentation
+        * Tabelle mit fester Anzahl Zeilen und mit variabler Anzahl Spalten (Zeilenlänge)
+        * Pixelspalten mit charakteristischer Abfolge pro Zeichen
+]
+.fourty[
+<center>
+<img src="img/detail_mask.png" style="width:150px"/>
+</center>
+]
+]
+
 .cols[
 .fifty[
 ```
   0123456789
-0 1111111111
-1 1111111111
-2 0000110000 
+0 1100001100
+1 1100001100
+2 1100001100 
+3 1100001100 
+4 1111111100 
+5 1111111100 
+6 1100001100
+7 1100001100
+8 1100001100 
+9 1100001100 
 ```
 ]
 .fifty[
@@ -480,26 +428,6 @@ den Nacht begegnen könnte, in Gnaden bewahren
 </center>
 ]
 ]
-
----
-
-# Texterkennung
-
-- Software
-    + [**Tesseract**](https://github.com/tesseract-ocr/tesseract): komplettes Open-Source-Paket
-        * regelbasierte Bildvorverarbeitung und Layouterkennung
-        * datengetriebene Texterkennung (unterstützt > 100 Sprachen)
-        * Ease-of-Use-Training eigener Modelle
-        * für OCR und **HTR** verwendbar
-    + [**OCRopy**](https://github.com/ocropus/ocropy): umfangreiches Open-Source-Paket
-        * regelbasierte Bildvorverarbeitung und Layouterkennung
-        * datengetriebene Texterkennung (nur sehr wenige Modelle vorhanden)
-        * für OCR und **HTR** verwendbar
-        * prominente Ableger: [**kraken**](https://kraken.re) und [**Calamari**](https://github.com/Calamari-OCR/calamari)
-    + [**OCR-D**](https://ocr-d.de/): Workflow-Engine
-        * Orchestrierung verschiedener Open-Source-Pakete zu stabilen Workflows
-        * gleichzeitig DFG-Förderprogramm zur Verbesserung von OCR für historische Drucke
-        * SLUB als maßgebliche Entwicklungseinrichtung
 
 ---
 

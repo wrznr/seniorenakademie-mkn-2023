@@ -389,17 +389,17 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 # Texterkennung: Zeilenorientierte Ansätze
 
+zugrundeliegende Technik
 .cols[
 .fifty[
-- zugrundeliegende Technik
-    + Training
-        * Zählen von Sequenzen aus Vektor-Buchstabenteil-Paaren
-        * Berechnen von Wahrscheinlichkeiten
++ Training
+    * Zählen von Sequenzen aus Vektor-Buchstabenteil-Paaren
+    * Berechnen von Wahrscheinlichkeiten
 ]
 .fifty[
-    + Repräsentation
-        * Tabelle mit fester Anzahl Zeilen und mit variabler Anzahl Spalten (Zeilenlänge)
-        * Pixelspalten mit charakteristischer Abfolge pro Zeichen
++ Repräsentation
+    * Tabelle mit fester Anzahl Zeilen und mit variabler Anzahl Spalten (Zeilenlänge)
+    * Pixelspalten mit charakteristischer Abfolge pro Zeichen
 ]
 ]
 
